@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+import React, {Component} from 'react';
+import vid from './htf.mp4';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <header className = "Sticky">
+          <p className = "Home-Bar">home</p>
+          <p className = "Menu-Bar">about me</p>
+        </header>
+
+        <header className="App-header">
+          <video src = {vid} width="300" height="300" controls>
+          </video>
+        </header>
+      </div>
+    );
+  }
 }
 
 export default App;
+
