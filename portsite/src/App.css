@@ -2,27 +2,21 @@
   background-color: #101010;
 }
 
-.App-header {
+body {
   background-color: #19191a;
-  min-height: 80vh;
+  min-height: 89vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.Home-Bar {
-  display: inline;
-  align-items: start;
-  text-indent: 1em;
-}
 
 .Menu-Bar {
-  display: inline;
-  justify-content: center;
-  text-indent: 23em;
+  display: flex;
+  font-size: calc(10px + 1vmin);
+  align-content: baseline;
 }
 
 .Sticky {
@@ -31,7 +25,24 @@
   position: sticky;
   color: white;
   margin: 0px;
+  position: absolute;
+  left:0px;
+  right:0px;
 }
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: lightskyblue;
+}
+
+video {
+
+}
+
 
 @keyframes App-logo-spin {
   from {
