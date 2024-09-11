@@ -1,30 +1,33 @@
 import React, {Component} from 'react';
-import vid from './htf.mp4';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Navbar from "./Navbar";
-import About from "./About";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Contact from './pages/Contact'
+import Projects from './pages/Projects';
+import About from './pages/About';
+import Home from './pages/Home';
+import Layout from './pages/Layout';
+import NoPage from './pages/NoPage';
+
+// Both navigation is required in Index and app.js due to some
+// Weirdness in BrowserRouter.
 
 class App extends Component {
-  handleClick() {
-    window.open("./About");
-  }
-
   render() {
     return (
-      <div className="App">
-        <header className="Sticky">
-          <Router className="Menu-Bar">
-              <Navbar />
-              <Routes>
-                <Route path="./About" component={About} />
-              </Routes>
-              
-          </Router>
-        </header>
-
-        
-      </div>
+      <div>
+          <BrowserRouter>       
+            <Routes>         
+              <Route path="/" element={<Layout />}>           
+              <Route index element={<Home />} />        
+              <Route path="about" element={<About />} />  
+              <Route path="projects" element={<Projects />} /> 
+              <Route path="contact" element={<Contact />} />           
+              <Route path="*" element={<NoPage />} />         
+            </Route>       
+          </Routes>     
+        </BrowserRouter> 
+    </div>
     );
   }
 }
