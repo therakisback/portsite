@@ -8,9 +8,8 @@ function Navbar() {
             <nav>
                 {icon()}
                 <Link to="/" className="textlink">home</Link>                   
-                <Link to="/About" className="textlink">about</Link>
                 <Link to="/Projects" className="textlink">projects</Link> 
-                <Link to="/Contact" className="textlink">contact</Link>                     
+                <Link to="/About" className="textlink">about</Link>                    
             </nav>   
         </div> 
     ); 
@@ -18,7 +17,7 @@ function Navbar() {
 
 function icon() {
     return      <Link to="/">
-                    <img src={iconimg} alt="RKIcon" />
+                    <img src={iconimg} alt="RKIcon" draggable="false"/>
                 </Link>
 }
 

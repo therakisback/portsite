@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Contact from './pages/Contact'
 import Projects from './pages/Projects';
 import About from './pages/About';
 import Home from './pages/Home';
@@ -21,8 +20,7 @@ class App extends Component {
               <Route path="/" element={<Layout />}>           
               <Route index element={<Home />} />        
               <Route path="about" element={<About />} />  
-              <Route path="projects" element={<Projects />} /> 
-              <Route path="contact" element={<Contact />} />           
+              <Route path="projects" element={<Projects />} />        
               <Route path="*" element={<NoPage />} />         
             </Route>       
           </Routes>     

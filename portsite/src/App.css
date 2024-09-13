@@ -1,12 +1,9 @@
 body {
   background-color: #252525;
   min-height: 89vh;
-  display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: top;
   color: white;
-  padding: .45in;
 }
 
 img{
@@ -24,12 +21,64 @@ img{
   top:0px;
   text-indent: .12in;
   font-size: 1.5em;
+  z-index: 5;
 }
 
 .textlink {
   padding: .25in;
   position: relative;
   bottom: .15in;
+}
+
+.intro {
+  position: relative;
+  top: 1in;
+  left: 7%;
+  z-index: 0;
+  background-color: #303030;
+  padding-left: 1in;
+  padding-top: .5in;
+  padding-bottom:.5in;
+  padding-right: .75in;
+  width:35%;
+  height: 3in;
+}
+
+.title {
+  font-size: 3em;
+}
+
+.projectShowcase {
+  background-color: #303030;
+  position: relative;
+  top: 2in;
+  left: 7%;
+  z-index: 0;
+  width: 86%;
+  padding-top: .5in;
+  padding-bottom: .5in;
+}
+
+.about {
+  background-color: #303030;
+  position: relative;
+  top: 3in;
+  left: 7%;
+  z-index: 0;
+  width: 86%;
+  padding-top: .5in;
+  padding-bottom: .5in;
+}
+
+.contact {
+  background-color: #303030;
+  position: relative;
+  top: 4in;
+  left: 7%;
+  z-index: 0;
+  width: 86%;
+  padding-top: .5in;
+  padding-bottom: .25in;
 }
 
 a {
