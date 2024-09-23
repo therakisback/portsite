@@ -1,3 +1,5 @@
+
+
 body {
   background-color: #252525;
   min-height: 89vh;
@@ -6,11 +8,18 @@ body {
   color: white;
 }
 
+/*img CSS*/
 img{
   height:.55in;
   align-self: bottom;
 }
 
+img.me {
+  height: 3in;
+  display: inline;
+}
+
+/*Sticky navbar CSS, keeps navbar on top of screen and highest z */
 .stick {
   display: flex;
   background-color: #141414;
@@ -30,24 +39,35 @@ img{
   bottom: .15in;
 }
 
+/*CSS for intro of home page*/
 .intro {
   position: relative;
   top: 1in;
-  left: 7%;
+  left: 15%;
   z-index: 0;
   background-color: #303030;
-  padding-left: 1in;
+  padding-left: 6%;
   padding-top: .5in;
   padding-bottom:.5in;
-  padding-right: .75in;
-  width:35%;
+  padding-right: 4%;
+  width: 60%;
   height: 3in;
+  justify-content: center;
 }
 
 .title {
+  position: relative;
+  top: 0in;
   font-size: 3em;
+  display: inline;
 }
 
+.subtitle {
+  display: inline;
+}
+
+
+/**/
 .projectShowcase {
   background-color: #303030;
   position: relative;
